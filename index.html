@@ -1,0 +1,184 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+<!-- content -->
+<section id="home" data-stellar-background-ratio="0.5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-7 col-sm-6">
+				<div class="flexslider" id="flexHome">
+					<ul class="slides">
+						<li>
+							<h1>Robyns Floral</h1>
+							<h2>at Duncan True Value</h2>
+						</li>
+					</ul>
+				</div> 
+			</div>
+			<div class="col-lg-5 col-sm-6 hidden-xs">
+				<img src="/images/hero-image_452x480.png" class="img-responsive"/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- About Us -->
+<section class="slice" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>About Robyn's Floral</h1>
+				<h2 class="subTitle">Robyn's specializes in custom floral masterpieces.</h2>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4"> <img src="http://placehold.it/360x360" alt="services" class="img-responsive"> </div>
+			<div class="col-sm-4">
+				<h2>Custom Floral Creations</h2>
+
+				<p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique tincidunt lacus, id sagittis nunc convallis et. Suspendisse tincidunt, lacus ut dictum adipiscing, nisl metus euismod arcu, tincidunt pulvinar dui arcu nec purus. Integer vitae aliquam nisi.
+				</p>
+
+				<p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique tincidunt lacus, id sagittis nunc convallis et. Suspendisse tincidunt, lacus ut dictum adipiscing, nisl metus euismod arcu, tincidunt pulvinar dui arcu nec purus. Integer vitae aliquam nisi.
+				</p>
+			</div>
+
+			<div class="col-sm-4">
+				<h2>Robyn</h2>
+				<p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique tincidunt lacus, id sagittis nunc convallis et. Suspendisse tincidunt, lacus ut dictum adipiscing, nisl metus.
+        </p>
+				<p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique tincidunt lacus, id sagittis nunc convallis et. Suspendisse tincidunt, lacus ut dictum adipiscing, nisl metus.
+        </p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End About Us -->
+
+
+<!-- our work section -->
+<div id="paralaxSlice1" data-stellar-background-ratio="0.5">
+	<div class="maskParent">
+		<div class="paralaxMask"></div>
+		<div class="paralaxText container">
+			<blockquote class="bigTitle">Each arrangement at Robyn's Floral<br /> is custom crafted to your specifications</blockquote>
+		</div>
+	</div>
+</div>
+<section class="slice" id="creations">
+	<div class="container clearfix">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Robyn's Work</h1>
+				<h2 class="subTitle">Examples for custom floral creations</h2>
+			</div>
+
+			<div class="portfolio-items  isotopeWrapper clearfix imgHover" id="3">
+				{% for i in (1..6) %}
+        <article class="col-sm-4 isotopeItem women">
+					<section class="imgWrapper">
+						<img alt="" src="http://placehold.it/360x280" class="img-responsive">
+					</section>
+					<div class="mediaHover">
+						<div class="mask"></div>
+						<div class="iconLinks"> 
+							<a href="portfolio-project-fullwidth-image.html" title="link" class="sizer portfolioSheet">
+								<i class="icon-picture iconRounded iconBig"></i>
+								<span>link</span>
+							</a> 
+							<a href="images/portfolio/zoom6.jpg" class="image-link" title="Full width image">
+								<i class="icon-search iconRounded iconBig"></i>
+								<span>zoom</span>
+							</a> 
+						</div>
+					</div>
+					<section class="boxContent">
+						<h3>Full width image</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate nunc ut tellus sollicitudin placerat. <br>
+							<a href="portfolio-project-fullwidth-image.html" class="moreLink portfolioSheet">&rarr; read more</a>
+						</p>
+					</section>
+				</article>
+        {% endfor %}
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Begin Contact Us -->
+<div id="paralaxSlice2" data-stellar-background-ratio="0.5" >
+	<div class="maskParent">
+		<div class="paralaxMask"></div>
+
+		<div class="paralaxText">
+			<blockquote>Keep in touch with us</blockquote>
+
+		</div>
+	</div>
+</div>
+<section class="slice"  id="contactSlice" >
+	<div class="container">
+		<div class="row">
+
+		<div class="col-sm-12">
+			<h1 class="noSubtitle">Contact us</h1>
+		</div>
+		<div class="col-sm-12">
+			<div class="col-sm-4">
+				<h4>Address:</h4>
+				<address>
+					Robyn's Floral at Duncan True Value<br/>
+					1112 Lowry Ave<br/>
+					Jeannette, PA 15644 USA <br/>
+				</address>
+				<h4>Phone:</h4>
+				<address>
+					724.331.3788<br/>
+				</address>
+			</div>
+			<form method="post" action="" id="contactfrm" role="form">
+
+				<div class="col-sm-4"> 
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" name="name" id="name" placeholder="Enter name"  title="Please enter your name (at least 2 characters)"/>
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" name="email" id="email" placeholder="Enter email" title="Please enter a valid email address"/>
+					</div>
+					<div class="form-group">
+						<label for="phone">Phone</label>
+						<input name="phone" class="form-control required digits" type="tel" id="phone" size="30" value="" placeholder="Enter email phone" title="Please enter a valid phone number (at least 10 characters)">
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="form-group">
+						<label for="comments">Comments</label>
+						<textarea name="comment" class="form-control" id="comments" cols="3" rows="5" placeholder="Enter your message…" title="Please enter your message (at least 10 characters)"></textarea>
+					</div>
+					<fieldset class="clearfix securityCheck">
+						<legend>Security</legend>
+						<div class="form-group">
+							<img src="" alt="Image verification" id="verifyImg"/>
+							<input class="required form-control"  id="verify" name="verify" type="text" >
+						</div>
+					</fieldset>
+				</div>                        
+				<div class="col-md-8 col-md-offset-4">
+					<div class="result"></div>
+					<button name="submit" type="submit" class="btn btn-lg" id="submit"> Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+<!-- End Contact Us -->
+        

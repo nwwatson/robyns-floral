@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %} {{ page.title }} | {% endif %} Venture Abstract and Settlement Services, Inc </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet" type="text/css">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    {% css_asset_tag global %}
+    - /_assets/stylesheets/bootstrap.css
+    - /_assets/javascripts/flexslider/flexslider.css
+    - /_assets/stylesheets/layouts.css
+    - /_assets/stylesheets/styles.css
+    {% endcss_asset_tag %}
+</head>
+<body data-spy="scroll" data-target="#scrollTarget" data-offset="150">
+	<!-- Primary Page Layout 
+	================================================== -->
+	<!-- globalWrapper -->
+	<div id="globalWrapper" class="localscroll">
+		<!-- header -->
+		<header id="mainHeader" class="navbar-fixed-top" role="banner">
+			<div class="container">
+				<nav class="navbar navbar-default scrollMenu" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+						<a class="navbar-brand" href="index.html"></a> </div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse" id="scrollTarget">
+							<ul class="nav navbar-nav pull-right">
+								<li class="active"><a href="#home"><i class="icon-home-outline"></i>Home</a> </li>
+								<li><a href="#about"><i class="icon-star"></i>About</a> </li>
+								<li><a href="#creations"><i class="icon-popup-1"></i>Creations</a> </li>
+								<li><a href="#contactSlice"><i class="icon-mail"></i>Contact</a> </li>
+							</ul>
+						</div>
+          </div>
+				</nav>
+			</div>
+		</header>
+		<!-- header -->
+    {{ content }}
+		<!-- footer -->
+		<footer>
+			<section id="mainFooter">
+				<div class="container" id="footer">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="footerWidget">
+								<p>
+                  <a href="#" title="Little Neko, website template creation">Robyn's Floral at Duncan True Value</a> 
+                  is eu cursus turpis. Nam convallis eu magna non mollis. Nulla non massa pretium, dictum neque at, 
+                  molestie quam. Praesent ac orci vulputate, rutrum elit eget, pretium nulla.
+                </p>
+							</div>
+						</div>
+
+						<div class="col-sm-6">
+							<div class="footerWidget">
+
+								<h3>Robyn's Floral at Duncan True Value</h3>
+								<address>
+									<p> <i class="icon-location"></i>&nbsp;1112 Lowry Ave<br>
+										Jeannette, PA 15644 USA <br>
+										<i class="icon-phone"></i>&nbsp;724.331.3788 <br>
+									</address>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</footer>
+			<section  id="footerRights">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<p>Copyright &copy; 2014 Robyn's Floral / All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End footer -->
+		</div>
+		<!-- global wrapper -->
+  
+  {% javascript_asset_tag global %}
+  - /_assets/javascripts/jquery-1.10.2.min.js
+  - /_assets/javascripts/bootstrap.js
+  - /_assets/javascripts/flexslider/jquery.flexslider.js
+  {% endjavascript_asset_tag %}
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+</body>
+</html>

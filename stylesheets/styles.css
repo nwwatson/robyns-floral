@@ -1,4 +1,4 @@
-/* MAIN MENU 
+/* MAIN MENU
 ================================================== */
 
 #mainHeader{
@@ -20,10 +20,10 @@
 	color:#fff;
 }
 
-/* END MAIN MENU 
+/* END MAIN MENU
 ================================================== */
 
-/* FOOTER 
+/* FOOTER
 ================================================== */
 
 footer {
@@ -43,7 +43,7 @@ p.credits a {
 	color:#3E6D92;
 }
 
-/* END FOOTER 
+/* END FOOTER
 ================================================== */
 
 /* HOME
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6 {
 	color:#222;
 }
 h2 {
- color:#888;	
+ color:#888;
 }
 h2 i {color:#999}
 h2.subTitle:after, h1.noSubtitle:after{
@@ -159,7 +159,7 @@ h2.subTitle:after, h1.noSubtitle:after{
 }
 
 #home {
-  background-image: url('/images/paralax-blue-3.jpg');
+  background-image: url('/images/paralax-blue-3.png');
 }
 #paralaxSlice1 {
 	background-image: url('/images/paralax-1.jpg');
